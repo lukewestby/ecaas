@@ -1,0 +1,17 @@
+{
+  "name": "elm-compiler-as-a-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^13.2.1",
+    "joi": "^8.0.5",
+    "node-elm-compiler": "^3.0.0",
+    "tmp": "0.0.28"
+  }
+}
