@@ -6,7 +6,7 @@ const tmp = require('tmp');
 const Elm = require('node-elm-compiler');
 
 const server = new Server();
-server.connection({ port: process.env.PORT || 1337 });
+server.connection({ port: process.env.PORT || 1337, routes: { cors: true } });
 
 const removeRuntime = (source) => {
   return 'Elm.Main =' + source.split('Elm.Main =')[1];
