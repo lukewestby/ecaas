@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "heroku-prebuild": "npm install -g elm"
+  },
+  "engines": {
+    "node": "5.9.1"
   },
   "author": "",
   "license": "ISC",

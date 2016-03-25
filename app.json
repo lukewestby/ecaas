@@ -1,0 +1,8 @@
+{
+  "name": "elm-compiler as a service",
+  "description": "Compile Elm on the fly",
+  "repository": "https://github.com/lukewestby/ecaas",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["elm", "elm-compiler"],
+  "image": "heroku/nodejs"
+}
