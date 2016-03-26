@@ -39,7 +39,6 @@ server.route({
             }
           })
           .catch((error) => {
-            console.log(error);
             reply(error);
           })
           .then(() => cleanup());
