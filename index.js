@@ -9,7 +9,9 @@ const server = new Server();
 server.connection({ port: process.env.PORT || 1337, routes: { cors: true } });
 
 const removeRuntime = (source) => {
-  return 'Elm.Main =' + source.split('Elm.Main =')[1];
+    var re = /\n(var _user\$project\$Main[\s\S]*)\nvar Elm =/;
+    var matches = source.match(re);
+    return (matches !== null) ? matches[1] : "error: user code not found";
 };
 
 server.route({
